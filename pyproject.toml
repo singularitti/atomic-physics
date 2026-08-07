@@ -1,0 +1,23 @@
+[project]
+name = "atomic-physics"
+version = "0.1.0"
+description = "Small, reusable models and visualizations for atomic physics"
+readme = "README.md"
+authors = [
+    { name = "singularitti", email = "singularitti@outlook.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "imageio-ffmpeg>=0.6.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
